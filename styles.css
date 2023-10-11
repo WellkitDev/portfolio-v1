@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500&family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --bg-primary: linear-gradient(90deg,
+            rgb(239, 242, 247) 0%,
+            7.60286%,
+            rgb(237, 240, 249) 15.2057%,
+            20.7513%,
+            rgb(235, 239, 248) 26.297%,
+            27.6386%,
+            rgb(235, 239, 248) 28.9803%,
+            38.2826%,
+            rgb(231, 237, 249) 47.585%,
+            48.1216%,
+            rgb(230, 236, 250) 48.6583%,
+            53.1306%,
+            rgb(228, 236, 249) 57.6029%,
+            61.5385%,
+            rgb(227, 234, 250) 65.4741%,
+            68.7835%,
+            rgb(222, 234, 250) 72.093%,
+            75.7603%,
+            rgb(219, 230, 248) 79.4275%,
+            82.8265%,
+            rgb(216, 229, 248) 86.2254%,
+            87.8354%,
+            rgb(213, 228, 249) 89.4454%,
+            91.8605%,
+            rgb(210, 226, 249) 94.2755%,
+            95.4383%,
+            rgb(209, 225, 248) 96.6011%,
+            98.3005%,
+            rgb(208, 224, 247) 100%);
+    --bg-secondary    : rgba(255, 255, 255, 0.4);
+    --color-soft-gray : rgba(255, 255, 255, 0.4);
+    --color-white     : #ffffff;
+    --color-white-soft: #EFF3FF;
+    --color-black     : #000000;
+    --color-gray      : #71777D;
+    --color-blue      : #174AE4;
+    --btn-primary     : linear-gradient(130deg, #2870EA 20%, #1B4AEF 77.5%);
+    --btn-secondary   : linear-gradient(130deg, #71777D 20%, #EFF3FF 77.5%);
+    --shadow-primary  : 0px 0.3px 0.9px rgba(0, 0, 0, 0.12), 0px 1.6px 3.6px rgba(0, 0, 0, 0.16);
+    --shadow-scondary : 0px 5px 4px 0px rgba(73, 141, 255, .3);
+    --transition      : .3s ease;
+}
+
+* {
+    margin         : 0;
+    padding        : 0;
+    box-sizing     : border-box;
+    text-decoration: none;
+    list-style     : none;
+    font-family    : 'Poppins', sans-serif;
+    border         : none;
+    outline        : none;
+    scroll-behavior: smooth;
+    letter-spacing : .3px;
+}
+
+body {
+    line-height: 1.54;
+}
+
+h1 {
+    font-size: 48px;
+    color    : var(--color-black);
+}
+
+h2 {
+    font-size: 28px;
+    color    : var(--color-gray);
+}
+
+p {
+    font-size  : 17px;
+    line-height: 140%;
+    color      : var(--color-gray);
+}
+
+.heading {
+    text-align   : center;
+    margin-bottom: 3rem;
+}
+
+.heading-p {
+    text-align : center;
+    padding-top: 9rem;
+}
+
+a {
+    font-size            : 20px;
+    color                : var(--color-blue);
+    text-decoration-color: var(--color-white);
+    transition           : var(--transition);
+}
+
+a:hover {
+    color                : var(--color-black);
+    text-decoration-color: var(--color-black);
+    text-underline-offset: 1rem;
+    text-decoration      : underline;
+}
+
+.btn {
+    width          : 8.4rem;
+    padding        : 6px 15px;
+    margin-left    : 10px;
+    border-radius  : 2rem;
+    color          : var(--color-black);
+    cursor         : pointer;
+    display        : inline-block;
+    width          : fit-content;
+    justify-content: center;
+    align-items    : center;
+    font-size      : 14px;
+    transition     : var(--transition);
+    text-decoration: none !important;
+    box-shadow     : var(--shadow-primary);
+}
+
+.btn-blue {
+    color     : var(--color-white-soft);
+    background: var(--btn-primary);
+}
+
+.btn-soft {
+    background: var(--color-soft-gray);
+    color     : var(--color-blue);
+
+}
+
+img {
+    width  : 100%;
+    display: block;
+}
+
+#icon1 {
+    font-size: 35px;
+}
+
+.container {
+    margin   : 0 auto;
+    max-width: 1080px;
+    width    : 90%;
+}
+
+.flex-end {
+    display        : flex;
+    justify-content: flex-end;
+    align-items    : flex-end;
+}
+
+/* .......................Start Nav Bar......................... */
+nav {
+    width      : 100vw;
+    height     : 6.5rem;
+    position   : fixed;
+    top        : 0;
+    left       : 0;
+    display    : grid;
+    place-items: center;
+    background : var(--color-white-soft);
+    box-shadow : var(--shadow-scondary);
+    z-index    : 1;
+}
+
+.nav-container {
+    height         : 100%;
+    padding        : 25px 50px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.logo h1 {
+    font-size  : 32px;
+    font-weight: bold;
+    color      : var(--color-blue) !important;
+}
+
+.logo {
+    text-decoration: none !important;
+}
+
+.nav-links {
+    display    : flex;
+    align-items: center;
+    gap        : 2rem;
+}
+
+/* .......................Start home section......................... */
+#home {
+    height    : 100vh;
+    background: var(--bg-primary);
+}
+
+#welcome-section {
+    height         : 100vh;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+
+/* .......................Start About section......................... */
+#about {
+    margin-bottom: 144px;
+}
+
+.about-container {
+    display              : grid;
+    grid-template-columns: 38% auto;
+    gap                  : 4rem;
+    align-items          : center;
+}
+
+.about-left i {
+    font-size  : 400px;
+    text-shadow: var(--shadow-primary);
+}
+
+#photo {
+    border-radius: 50%;
+    border       : 10px solid var(--color-white-soft);
+    box-shadow   : var(--shadow-scondary);
+}
+
+.basic-edu {
+    display      : flex;
+    gap          : 32px;
+    margin-bottom: 32px;
+}
+
+.about-box {
+    width        : 100%;
+    padding      : 24px;
+    text-align   : center;
+    border-radius: 8px;
+    background   : var(--color-soft-gray);
+    box-shadow   : var(--shadow-primary);
+}
+
+.readme {
+    text-align: justify;
+    color     : var(--color-black);
+}
+
+/* .......................Start Project section......................... */
+#projects {
+    background    : var(--bg-primary);
+    padding-bottom: 144px;
+}
+
+.project-container {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 30px;
+}
+
+.project-card {
+    height        : 750px;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    padding       : 20px;
+    margin        : auto;
+    gap           : 20px;
+    background    : var(--bg-secondary);
+    border-radius : 8px;
+    box-shadow    : var(--shadow-primary);
+}
+
+.role {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 120px;
+}
+
+.card-left img {
+    border-radius: 8px;
+}
+
+
+
+
+.card-right p {
+    text-align: justify;
+}
+
+.project-btn {
+    padding-top: 20px;
+}
+
+.more-page {
+    padding-top: 40px;
+    text-align : center;
+}
+
+/* .......................Start Contact section......................... */
+.contact-container {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 30px;
+    padding        : 25px;
+}
+
+.contact-container h5 {
+    color      : var(--color-gray);
+    font-weight: normal;
+}
+
+.email,
+.instagram,
+.linkedin {
+    display    : flex;
+    align-items: center;
+    gap        : .5rem;
+}
+
+/* .......................Start Footer section......................... */
+footer {
+    margin-top: 9rem;
+    padding   : 30px;
+    text-align: center;
+}
+
+footer .nav-links {
+    justify-content: center;
+    margin-bottom  : 3rem;
+}
+
+/* .......................Start Media Query......................... */
+@media (max-width:1024px) {
+
+    /*Start About  */
+    .about-container {
+        gap: 30px;
+    }
+
+    .basic-edu {
+        gap: 20px;
+    }
+
+
+    /*Start Projects  */
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-card {
+        height: auto;
+    }
+
+    .project-card img {
+        height: 30%;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    /*Start Nav  */
+    .logo {
+        display: none;
+    }
+
+    .nav-links {
+        justify-content: center;
+        width          : 100%;
+    }
+
+
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-card {
+        height: auto;
+    }
+
+    .project-card img {
+        height: 30%;
+    }
+}
+
+@media (max-width:768px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+
+    /*Start Header  */
+    .header-container {
+        width                : 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .header-left {
+        width : 70%;
+        margin: 0 auto;
+    }
+
+    /*Start About  */
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-left {
+        width          : 70%;
+        margin         : 0 auto;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+    }
+
+    .about-right {
+        margin: 25px;
+    }
+
+    .basic-edu {
+        gap: 10px;
+    }
+
+
+    /*Start projects  */
+    .project-container {
+        grid-template-columns: 1fr;
+        padding              : 25px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+}
